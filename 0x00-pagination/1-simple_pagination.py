@@ -41,7 +41,7 @@ class Server:
         """
             Retrieves and return the appropriate page of the dataset
         """
-        assert type(page) == int and type(page_size) == int
+        assert type(page) is int and type(page_size) is int
         assert page > 0 and page_size > 0
         strt, end = index_range(page, page_size)
         data_set = self.dataset()

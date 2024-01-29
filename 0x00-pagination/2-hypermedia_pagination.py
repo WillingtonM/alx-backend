@@ -47,10 +47,10 @@ class Server:
             return []
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
-        """ 
+        """
             Retrieve or return dict of pagination data.
             Key/value pairs consist of the following:
-                page_size - dataset page length 
+                page_size - dataset page length
                 page - current page number
                 data - dataset page
                 next_page - next page if there is one
